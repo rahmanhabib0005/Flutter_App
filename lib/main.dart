@@ -11,7 +11,7 @@ class FlutterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: "FlutterApp",
-        theme: ThemeData(primarySwatch: Colors.yellow, useMaterial3: true),
+        theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
         debugShowCheckedModeBanner: false,
         home: DashBoardScreen());
   }
@@ -27,7 +27,24 @@ class DashBoardScreen extends StatelessWidget {
         ),
       ),
       body: Container(
+        width: double.infinity,
+        height: double.infinity,
         color: Colors.blue.shade50,
+        child: Center(
+          child: Container(
+            width: 100,
+            height: 100,
+            decoration: BoxDecoration(
+                color: Colors.blueGrey,
+                // borderRadius: BorderRadius.circular(8),
+                border: Border.all(width: 2, color: Colors.black),
+                boxShadow: [
+                  BoxShadow(
+                      blurRadius: 21, spreadRadius: 0, color: Colors.grey),
+                ],
+                shape: BoxShape.circle),
+          ),
+        ),
       ),
     );
   }
