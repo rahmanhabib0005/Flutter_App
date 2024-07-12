@@ -5,47 +5,47 @@ void main() {
   runApp(const MyApp());
 }
 
-// var arrNames = ['Habib', 'Sakil', 'Ramim', 'Nasim', 'Baki', 'Milon', 'Monir'];
-
-// class FlutterApp extends StatelessWidget {
-//   const FlutterApp({super.key});
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//         title: "FlutterApp",
-//         theme: ThemeData(
-//             primarySwatch: Colors.blue,
-//             textTheme: TextTheme(
-//               healine1: TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
-//               subtitle: TextStyle(fontSize: 11, fontWeight: FontWeight.w500),
-//             )),
-//         debugShowCheckedModeBanner: false,
-//         home: DashBoardScreen());
-//   }
-// }
+var arrNames = ['Habib', 'Sakil', 'Ramim', 'Nasim', 'Baki', 'Milon', 'Monir'];
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My App',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          primarySwatch: Colors.blue,
-          textTheme: TextTheme(
-            titleSmall: TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
-            titleLarge: TextStyle(
-                fontSize: 11,
-                fontWeight: FontWeight.w500,
-                fontStyle: FontStyle.italic),
-          )),
-      home: const DashBoardScreen(),
-    );
+        title: "FlutterApp",
+        theme: ThemeData(
+            primarySwatch: Colors.blue,
+            textTheme: TextTheme(
+              titleLarge: TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
+              titleSmall: TextStyle(fontSize: 11, fontWeight: FontWeight.w500),
+            )),
+        debugShowCheckedModeBanner: false,
+        home: const DashBoardScreen());
   }
 }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'My App',
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//           primarySwatch: Colors.blue,
+//           textTheme: TextTheme(
+//             titleSmall: TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
+//             titleLarge: TextStyle(
+//                 fontSize: 11,
+//                 fontWeight: FontWeight.w500,
+//                 fontStyle: FontStyle.italic),
+//           )),
+//       home: const DashBoardScreen(),
+//     );
+//   }
+// }
 
 class DashBoardScreen extends StatelessWidget {
   const DashBoardScreen({super.key});
