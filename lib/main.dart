@@ -22,29 +22,75 @@ class DashBoardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-          child: Text("Dashboard"),
-        ),
-      ),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        color: Colors.blue.shade50,
-        child: Center(
-          child: Container(
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(
-                color: Colors.blueGrey,
-                // borderRadius: BorderRadius.circular(8),
-                border: Border.all(width: 2, color: Colors.black),
-                boxShadow: [
-                  BoxShadow(
-                      blurRadius: 21, spreadRadius: 0, color: Colors.grey),
-                ],
-                shape: BoxShape.circle),
+        backgroundColor: Colors.blue,
+        title: Container(
+          child: Center(
+            child: Text(
+              "Dashboard",
+              style: TextStyle(color: Colors.white),
+            ),
           ),
         ),
+      ),
+      // body: Container(
+      //   width: double.infinity,
+      //   height: double.infinity,
+      //   color: const Color.fromARGB(255, 201, 10, 10),
+      //   child: Center(
+      //     child: Container(
+      //       width: 100,
+      //       height: 100,
+      //       decoration: BoxDecoration(
+      //           color: Colors.white38,
+      //           // borderRadius: BorderRadius.circular(8),
+      //           border: Border.all(width: 2, color: Colors.white),
+      //           boxShadow: [
+      //             BoxShadow(
+      //                 blurRadius: 21, spreadRadius: 0, color: Colors.white),
+      //           ],
+      //           shape: BoxShape.circle),
+      //     ),
+      //   ),
+      // ),
+
+      body: Column(
+        // mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Expanded(
+              flex: 2,
+              child: Container(
+                // width: 50,
+                height: 50,
+                color: Colors.blueGrey,
+              )),
+          Expanded(
+              flex: 4,
+              child: Container(
+                // width: 50,
+                height: 50,
+                color: Colors.orange,
+              )),
+          Expanded(
+              flex: 2,
+              child: Container(
+                // width: 50,
+                height: 50,
+                color: Colors.purple,
+              )),
+          Expanded(
+              flex: 2,
+              child: Container(
+                // width: 50,
+                height: 50,
+                color: Colors.green,
+              )),
+          Expanded(
+              child: Container(
+            // width: 50,
+            height: 50,
+            color: Colors.blue,
+          )),
+        ],
       ),
     );
   }
