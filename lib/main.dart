@@ -254,7 +254,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
         // ),
 
-        body: Container(
+        body: Center(
+          child: Icon(
+            Icons.play_arrow_rounded,
+            size: 80,
+            color: Colors.orange,
+          ),
           // height: 300,
           //   child: GridView.builder(
           //     itemBuilder: (context, index) {
@@ -270,10 +275,10 @@ class _MyHomePageState extends State<MyHomePage> {
           //     ),
           //   ),
           // ));
-          child: ElevatedButton(
-            child: Text('Click Me..!'),
-            onPressed: callBack,
-          ),
+          // child: ElevatedButton(
+          //   child: Text('Click Me..!'),
+          //   onPressed: callBack,
+          // ),
         ));
   }
 }
